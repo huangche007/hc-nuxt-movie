@@ -72,10 +72,10 @@
                 <div class="comments-section">
                     <div class="mod-hd">
                         <h2>
-                            <i>贞德的短评</i>
+                            <i>{{movieInfos.title}}的短评</i>
                             
               · · · · · ·
-                            <span>(全部 396 条)</span>
+                            <span>(全部 {{movieInfos.comments_count}} 条)</span>
                         </h2>
                     </div>
                     <movie-comment-list :popular_reviews="movieInfos.popular_reviews"></movie-comment-list>
@@ -100,8 +100,6 @@ export default {
             app.dealNamesToStr(data,data.directors,'dirName');
             app.dealNamesToStr(data,data.writers,'writeName');
             app.dealNamesToStr(data,data.casts,'castName');
-
-            console.log('data:',data.popular_reviews);
             return {
                 movieInfos: data
             }
@@ -109,7 +107,16 @@ export default {
         } catch (error) {
             throw new Error(error);
         }
-    }
+    },
+    head(){
+        const _this = this;
+        return {
+            title: _this.movieInfos.title,
+            meta:[
+                {hid:'description',name:'description',content:_this.movieInfos.summary}
+            ]
+        }
+    }    
 }
 </script>
 <style lang="less" scoped>
