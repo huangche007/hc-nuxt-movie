@@ -34,7 +34,9 @@ export default {
   ** Plugins to load before mounting the App
   */
   plugins: [
-    '@/plugins/antd-ui'
+    '@/plugins/antd-ui',
+    '@/plugins/deal_img',
+    '@/plugins/ctx_names',
   ],
   /*
   ** Nuxt.js dev-modules
