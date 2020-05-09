@@ -1,4 +1,4 @@
-# hcnuxtmovie
+# 基于豆瓣电影API，实战Nuxt.js服务端渲染即使
 
 > My marvelous Nuxt.js project
 
