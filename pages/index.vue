@@ -1,20 +1,14 @@
 <template>
   <a-layout id="components-layout-demo-top" class="layout">
-    
-    <a-layout-content style="padding: 0 50px">
-      <div :style="{ background: '#fff', padding: '24px', minHeight: '280px',marginTop:'24px' }">
-        Content
-      </div>
-    </a-layout-content>
-    <a-layout-footer style="text-align: center" class="test">
-      Ant Design ©2018 Created by Ant UED
-    </a-layout-footer>
+
   </a-layout>
 </template>
 
 <script>
 export default {
-
+  asyncData({ redirect }) {
+    redirect('/movie/in_theaters')
+  }
 }
 </script>
 
