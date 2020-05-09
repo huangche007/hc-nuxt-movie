@@ -10,8 +10,7 @@ export default {
         MovieList
     },
     async asyncData({app,params}){
-        const {data} = await app.$axios.get('/v2/movie/in_theaters?start=0&count=10&apikey=0b2bdeda43b5688921839c8ecb20399b');
-        console.log('data:',data);
+        const {data} = await app.$axios.get('/v2/movie/in_theaters?start=0&count=30&apikey=0b2bdeda43b5688921839c8ecb20399b');
         return {subjects:data.subjects};
     },
 }
