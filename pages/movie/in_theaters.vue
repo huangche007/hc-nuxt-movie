@@ -1,0 +1,18 @@
+<template>
+    <div>
+        <movie-list :subjects="subjects"></movie-list>
+    </div>
+</template>
+<script>
+import MovieList from '~/components/MovieList.vue'
+export default {
+    components:{
+        MovieList
+    },
+    async asyncData({app,params}){
+        const {data} = await app.$axios.get('/v2/movie/in_theaters?start=0&count=10&apikey=0b2bdeda43b5688921839c8ecb20399b');
+        console.log('data:',data);
+        return {subjects:data.subjects};
+    },
+}
+</script>
