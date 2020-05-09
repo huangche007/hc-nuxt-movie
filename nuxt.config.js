@@ -9,7 +9,8 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: process.env.npm_package_description || '' }
+      { hid: 'description', name: 'description', content: process.env.npm_package_description || '' },
+      { hid: 'keywords', name: 'keywords', content: "电影、经典电影、热映、电视剧、美剧、影评、电影院、电影票、排行、推荐" }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
