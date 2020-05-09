@@ -2,13 +2,16 @@
   <div>
     <common-header></common-header>
     <nuxt />
+    <common-footer></common-footer>
   </div>
 </template>
 <script>
 import CommonHeader from '~/components/Header.vue'
+import CommonFooter from '~/components/Footer.vue'
 export default {
   components:{
-    CommonHeader
+    CommonHeader,
+    CommonFooter
   }
 }
 </script>
