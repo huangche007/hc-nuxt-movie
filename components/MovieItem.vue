@@ -31,7 +31,7 @@ export default {
 }
 </script>
 <style lang="less">
-    .moive-info-common{
+    h4{
         overflow: hidden;
         white-space: nowrap;
         text-overflow: ellipsis;
