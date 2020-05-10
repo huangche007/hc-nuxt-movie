@@ -69,7 +69,10 @@ export default {
       }    
     }
   },
-
+  router: {
+    base: '/nuxt/'
+  },
+  
   /*
   ** Build configuration
   */

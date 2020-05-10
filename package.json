@@ -10,6 +10,12 @@
     "start": "nuxt start",
     "generate": "nuxt generate"
   },
+  "config":{
+    "nuxt":{
+      "host":"127.0.0.1",
+      "port":"3003"
+    }
+  },
   "dependencies": {
     "@nuxtjs/axios": "^5.10.3",
     "ant-design-vue": "^1.1.10",
